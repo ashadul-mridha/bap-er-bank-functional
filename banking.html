@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1 class="text-5xl text-center mt-16 capitalize">Let's Get Some <span class="font-semibold text-purple-600">Moooooney</span> !!!</h1>
+    </header>
+
+    <main class="w-3/4 mx-auto ">
+        <!-- total balance -->
+        <section class="mt-8 ">
+            <div class=" gap-4 grid grid-cols-3">
+                <div class="bg-purple-400 text-white p-8 rounded">
+                    <h2 class="text-2xl">Diposite</h2>
+                    <h3 class="text-4xl">$ <span id="curent-dipo-amount">00</span></h3>
+                </div>
+                <div class="bg-blue-400 text-white p-8 rounded">
+                    <h2 class="text-2xl">WithDrow</h2>
+                    <h3 class="text-4xl">$ <span id="current-withdrow-balance">00</span></h3>
+                </div>
+                <div class="bg-green-400 text-white p-8 rounded">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h3 class="text-4xl">$ <span id="balance-total">1250</span> </h3>
+                </div>
+            </div>
+        </section>
+        <!-- withdrow and diposite -->
+        <section class="py-8">
+            <div class="grid grid-cols-2 gap-2">
+                <div class="bg-indigo-100 p-8">
+                    <h2 class="text-2xl mb-4 capitalize font-medium">Please Diposite</h2>
+                    <input type="text" id="diposite-amount" placeholder="$ Amount Want To Diposite" class="block w-3/4 border border-gray-400 rounded mb-4 px-2">
+                    <button id="diposite-btn" class="bg-yellow-600 px-4 py-2 font-medium text-white rounded">Diposite</button>
+                </div>
+                <div class="bg-yellow-100 p-8">
+                    <h2 class="text-2xl mb-4 capitalize font-medium">Please Withdrow</h2>
+                    <input type="text" id="withdrow-amount" placeholder="$ Amount Want To Withdrow" class="block w-3/4 border border-gray-400 rounded mb-4 px-2">
+                    <button id="withdrow-btn" class="bg-yellow-600 px-4 py-2 font-medium text-white rounded">Withdrow</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
